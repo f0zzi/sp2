@@ -1,0 +1,56 @@
+﻿<Window x:Class="sp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="494.447" Width="377.48">
+    <StackPanel Name="main" Orientation="Horizontal">
+        <StackPanel HorizontalAlignment="Center"
+                    Margin="10">
+            <Label Content="Fibo" HorizontalAlignment="Center" Margin="0 2"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Depth" Width="50"/>
+                <TextBox Name="tbFiboDepth" Width="50"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 2">
+                <Label Content="Delay" Width="50"/>
+                <TextBox Name="tbFiboDelay" Width="50"/>
+            </StackPanel>
+            <ListBox Name="lbFibo" Height="300"/>
+            <Button Background="LightGreen" Click="Start" Content="Start" Width="100" Margin="0 3" Name="btfibo"/>
+            <Button Click="Pause" Content="Pause" Width="100" Margin="0 3" Name="pfibo"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    Margin="10">
+            <Label Content="Fact" HorizontalAlignment="Center" Margin="0 2"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Depth" Width="50"/>
+                <TextBox Name="tbFactDepth" Width="50"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 2">
+                <Label Content="Delay" Width="50"/>
+                <TextBox Name="tbFactDelay" Width="50"/>
+            </StackPanel>
+            <ListBox Name="lbFact" Height="300"/>
+            <Button Background="LightGreen" Click="Start" Content="Start" Width="100" Margin="0 3" Name="btfact"/>
+            <Button Click="Pause" Content="Pause" Width="100" Margin="0 3" Name="pfact"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center"
+                    Margin="10">
+            <Label Content="Simple" HorizontalAlignment="Center" Margin="0 2"/>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Depth" Width="50"/>
+                <TextBox Name="tbSimpleDepth" Width="50"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 2">
+                <Label Content="Delay" Width="50"/>
+                <TextBox Name="tbSimpleDelay" Width="50"/>
+            </StackPanel>
+            <ListBox Name="lbSimple" Height="300"/>
+            <Button Background="LightGreen" Click="Start" Content="Start" Width="100" Margin="0 3" Name="btsimple"/>
+            <Button Click="Pause" Content="Pause" Width="100" Margin="0 3" Name="psimple"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
